@@ -3,6 +3,8 @@
     font-size: 1.2vw;
 }
 *, *::before, *::after { box-sizing: border-box}
+
+
 nav{
     background-color: #3D9970;
 }
@@ -28,7 +30,22 @@ nav ul li a{
 header{
     width: fit-content;
     margin: auto;
+    background-image: url(../img/exam.jpeg);
+    background-size: 100vw;
+    height: 40vw;
+    width: 97.7vw;
+    background-attachment: fixed;
 }
+
+header h1{
+    margin: auto;
+    width: fit-content;
+    padding-top:20vw;
+    font-size: 2.5vw;
+    color: #FFFFFF
+
+}
+
 header img{
     padding: 2vw 0 2vw 0;
     width: 75vw;
@@ -56,6 +73,9 @@ section #title{
     font-size: 1.75vw;
     font-weight: bold;
     padding: 2vw;
+}
+section .options{
+    display: flex;
 }
 
 section #quizzes{
@@ -96,6 +116,9 @@ section #quiz-box button{
     text-decoration-line: underline;
     margin-bottom: 1.25vw;
 }
+section #quiz-box button a{
+    color: rgb(0, 0, 0);
+}
 
 section .question{
     padding: 1vw 0 1vw 0;
@@ -124,6 +147,9 @@ form input[type=button]{
     background-color: #AAAAAA;
     text-decoration-line: underline;
 }
+.question{
+    font-weight: bold;
+}
 footer{
     background-color: #3D9970;
 }
@@ -150,11 +176,22 @@ footer ul ul li a{
     color: black;
 }
 .footer-link{
-    color: #AAAAAA;
+    color: #FFFFFF;
 }
 footer #copyright{
     width: fit-content;
     margin: auto;
     padding: 1vw;
     color: #FFFFFF;
+}
+#final-message{
+    visibility: hidden;
+}
+#imgs-ans img{
+    height: 7.5vw;
+    width: auto;
+    padding: 1vw 8vw ;
+}
+#imgs-ans {
+    text-align: center;
 }

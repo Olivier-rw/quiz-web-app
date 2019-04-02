@@ -20,55 +20,87 @@
         </ul>
     </nav>
     <section>
-        <h1>Programming I Quiz</h1>
+        <h1>Programming I Quiz on  Python Built in Functions</h1>
+        <p>Please make sure you double check before selecting any answer, and answer all the quesions in the order they are given into.</p>
         <form action="">
             <fieldset id="q1">
                 <div class="question">
-                    1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s?
+                    1. 'a' + 'x' if '123'.isdigit() else 'y' + 'b'
                 </div>
                 <div class="options">
-                    <p><input type="radio" name="q1" id="q1" value="opt1">Option 1</p>
-                    <p> <input type="radio" name="q1" id="q1" value="opt2">Option 2</p>
-                    <p> <input type="radio" name="q1" id="q1" value="opt3">Option 3</p>
-                    <p><input type="radio" name="q1" id="q1" value="opt4">Option 4</p>
+                    <p><input type="radio" name="q1opt1" value="opt1" onclick="check(name)">
+                        <div id="q1opt1" class="right">'axb'</div>
+                    </p>
+                    <p> <input type="radio" name="q1opt2" value="opt2" onclick="check(name)">
+                        <div id="q1opt2">'ax'</div>
+                    </p>
+                    <p> <input type="radio" name="q1opt3" value="opt3" onclick="check(name)">
+                        <div id="q1opt3">'axyb'</div>
+                    </p>
+                    <p><input type="radio" name="q1opt4" value="opt4" onclick="check(name)">
+                        <div id="q1opt4">'ab'</div>
+                    </p>
+                    <div id="feedback"></div>
                 </div>
             </fieldset>
             <fieldset id="q2">
                 <div class="question">
-                    2. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s?
+                    2. A while loop in Python is used for what type of iteration?
                 </div>
                 <div class="options">
-                    <p><input type="radio" name="q2" id="" value="opt1">Option 1</p>
-                    <p> <input type="radio" name="q2" id="" value="opt2">Option 2</p>
-                    <p> <input type="radio" name="q2" id="" value="opt3">Option 3</p>
-                    <p><input type="radio" name="q2" id="" value="opt4">Option 4</p>
+                    <p><input type="radio" name="q2opt1" value="opt1" onclick="check2(name)">
+                        <div id="q2opt1" class="right">indeterminate</div>
+                    </p>
+                    <p> <input type="radio" name="q2opt2" value="opt2" onclick="check2(name)">
+                        <div id="q2opt2">definite</div>
+                    </p>
+                    <p> <input type="radio" name="q2opt3" value="opt3" onclick="check2(name)">
+                        <div id="q2opt3">discriminant</div>
+                    </p>
+                    <p><input type="radio" name="q2opt4" value="opt4" onclick="check2(name)">
+                        <div id="q2opt4">indefinite</div>
+                    </p>
+                    <div id="feedback2"></div>
                 </div>
             </fieldset>
             <fieldset id="q3">
-
                 <div class="question">
-                    3. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s?
+                    3. Which of the following statements assigns the value 100 to the variable x in Python:
                 </div>
                 <div class="options">
-                    <p><input type="radio" name="q3" id="" value="opt1">Option 1</p>
-                    <p> <input type="radio" name="q3" id="" value="opt2">Option 2</p>
-                    <p> <input type="radio" name="q3" id="" value="opt3">Option 3</p>
-                    <p><input type="radio" name="q3" id="" value="opt4">Option 4</p>
+                    <p><input type="radio" name="q3opt1" value="opt1" onclick="check3(name)">
+                        <div id="q3opt1" class="right">x := 100</div>
+                    </p>
+                    <p> <input type="radio" name="q3opt2" value="opt2" onclick="check3(name)">
+                        <div id="q3opt2">x << 100</div>
+                    </p>
+                    <p> <input type="radio" name="q3opt3" value="opt3" onclick="check3(name)">
+                        <div id="q3opt3">x = 100</div>
+                    </p>
+                    <p><input type="radio" name="q3opt4" value="opt4" onclick="check3(name)">
+                        <div id="q3opt4">let x = 100</div>
+                    </p>
+                    <div id="feedback3"></div>
                 </div>
             </fieldset>
             <fieldset id="q4">
                 <div class="question">
-                    4. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s?
+                    4. What Python built-in function returns the unique number assigned to an object:
                 </div>
                 <div class="options">
-                    <p><input type="radio" name="q4" id="" value="opt1">Option 1</p>
-                    <p> <input type="radio" name="q4" id="" value="opt2">Option 2</p>
-                    <p> <input type="radio" name="q4" id="" value="opt3">Option 3</p>
-                    <p><input type="radio" name="q4" id="" value="opt4">Option 4</p>
+                    <p><input type="radio" name="q4opt1" value="opt1" onclick="check4(name)">
+                        <div id="q4opt1" class="right">ref()</div>
+                    </p>
+                    <p> <input type="radio" name="q4opt2" value="opt2" onclick="check4(name)">
+                        <div id="q4opt2">id()</div>
+                    </p>
+                    <p> <input type="radio" name="q4opt3" value="opt3" onclick="check4(name)">
+                        <div id="q4opt3">identity()</div>
+                    </p>
+                    <p><input type="radio" name="q4opt4" value="opt4" onclick="check4(name)">
+                        <div id="q4opt4">refnum()</div>
+                    </p>
+                    <div id="feedback4"></div>
                 </div>
             </fieldset>
             <fieldset id="q5">
@@ -77,10 +109,19 @@
                     the industry's standard dummy text ever since the 1500s?
                 </div>
                 <div class="options">
-                    <p><input type="radio" name="q5" id="" value="opt1">Option 1</p>
-                    <p> <input type="radio" name="q5" id="" value="opt2">Option 2</p>
-                    <p> <input type="radio" name="q5" id="" value="opt3">Option 3</p>
-                    <p><input type="radio" name="q5" id="" value="opt4">Option 4</p>
+                    <p><input type="radio" name="q5opt1" value="opt1" onclick="check5(name)">
+                        <div id="q5opt1" class="right">Option 1</div>
+                    </p>
+                    <p> <input type="radio" name="q5opt2" value="opt2" onclick="check5(name)">
+                        <div id="q5opt2">Option 2</div>
+                    </p>
+                    <p> <input type="radio" name="q5opt3" value="opt3" onclick="check5(name)">
+                        <div id="q5opt3">Option 3</div>
+                    </p>
+                    <p><input type="radio" name="q5opt4" value="opt4" onclick="check5(name)">
+                        <div id="q5opt4">Option 4</div>
+                    </p>
+                    <div id="feedback5"></div>
                 </div>
             </fieldset>
             <fieldset id="q6">
@@ -89,19 +130,26 @@
                     the industry's standard dummy text ever since the 1500s?
                 </div>
                 <div class="options">
-                    <p><input type="radio" name="q6" id="" value="opt1">Option 1</p>
-                    <p> <input type="radio" name="q6" id="" value="opt2">Option 2</p>
-                    <p> <input type="radio" name="q6" id="" value="opt3">Option 3</p>
-                    <p><input type="radio" name="q6" id="" value="opt4">Option 4</p>
+                    <p><input type="radio" name="q6opt1" value="opt1" onclick="check6(name)">
+                        <div id="q6opt1" class="right">Option 1</div>
+                    </p>
+                    <p> <input type="radio" name="q6opt2" value="opt2" onclick="check6(name)">
+                        <div id="q6opt2">Option 2</div>
+                    </p>
+                    <p> <input type="radio" name="q6opt3" value="opt3" onclick="check6(name)">
+                        <div id="q6opt3">Option 3</div>
+                    </p>
+                    <p><input type="radio" name="q6opt4" value="opt4" onclick="check6(name)">
+                        <div id="q6opt4">Option 4</div>
+                    </p>
+                    <div id="feedback6"></div>
                 </div>
             </fieldset>
             <div id="submit">
-                <div id="ready">
-                    <input type="checkbox" name="ready" id="ready1">Ready to Submit
-                </div>
-                <input type="button" value="Submit" onclick="validate()">
+                <input type="button" id="final-score" value="" >
             </div>
         </form>
+        <p id="final-message">You can now go back to do other quizzes on different topics</p>
 
     </section>
     <footer>

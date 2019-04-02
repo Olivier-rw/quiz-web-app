@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/main.css">
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </head>
 
 <body>
@@ -19,9 +19,65 @@
             <li><a class="nav-link" href="more.html">MORE</a></li>
         </ul>
     </nav>
-    <header>
-    </header>
     <section>
+        <h1>Programming I Quiz</h1>
+        <div class="question">
+
+            1. Consider this statement: <br>
+
+            >>> print(r'foo\\bar\nbaz') <br>
+            Which of the following is the correct REPL output?
+        </div>
+
+        <select name="ans3" id="">Select the right answer
+            <option value="">foo\\barnbaz</option>
+            <option value="">foo\\bar\nbaz</option>
+            <option value="">foo\bar
+                <br> baz</option>
+            <option value="">foo\bar\nbaz</option>
+        </select>
+
+        <div class="question">
+            2. Which of the following are valid ways to specify the string literal foo'bar in Python: (Check all that
+            apply) </div>
+        <input type="checkbox" name="" id="">"foo'bar" <br>
+        <input type="checkbox" name="" id="">"""foo'bar"""<br>
+        <input type="checkbox" name="" id="">'foo'bar'<br>
+        <input type="checkbox" name="" id="">'foo\'bar'<br>
+
+        <div class="question">
+            3. In Python, a variable must be declared before it is assigned a value: </div>
+
+        <button onclick="checkTrue()">False</button> <button onclick="wrong()">True</button>
+        <div id="feedback"></div>
+        <div class="question">
+            4. What signifies the end of a statement block or suite in Python?
+        </div>
+
+
+        <input type="radio" name="" id=""onclick="wrong()"">end <br>
+        <input type="radio" name="" id=""onclick="wrong()"">A comment <br>
+        <input type="radio" name="" id="" onclick="checkTrue()">} <br>
+        <input type="radio" name="" id=""onclick="wrong()"">A line that is indented less than the previous line <br>
+
+
+
+        <div class="question">5. In Python, a variable must be declared before it is assigned a value:</div>
+        <button onclick="wrong()">False</button><button onclick="checkTrue()">True</button>
+        <div class="question">
+            6. Which one would result into an error when run:
+        </div>
+        <div id="imgs-ans">
+            <img src="../img/a.png" alt="" onclick="imgCheck(name)" name="a">
+            <img src="../img/b.png" alt="" onclick="imgCheck(name)" name="b">
+            <img src="../img/c.png" alt="" onclick="imgCheck(name)" name="c">
+            <img src="../img/d.png" alt="" onclick="imgCheck(name)" name="d">
+        </div>
+
+        <div id="submit">
+            <input type="button" value="Submit" onclick="validate()">
+        </div>
+
 
     </section>
     <footer>
@@ -39,7 +95,9 @@
             <ul>
                 <li><a class="footer-h-link" href="more.html">Contact</a></li>
                 <li><a class="footer-link" href="https://www.alueducation.com/">ALU Education</a></li>
-                <li><a class="footer-link" href="https://www.alueducation.com/programmes/undergraduate/degree-programmes/computer-science/">CS Department</a></li>
+                <li><a class="footer-link"
+                        href="https://www.alueducation.com/programmes/undergraduate/degree-programmes/computer-science/">CS
+                        Department</a></li>
                 <li><a class="footer-link" href="https://github.com/Olivier-rw">Developer</a></li>
             </ul>
         </ul>
